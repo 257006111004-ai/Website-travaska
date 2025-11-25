@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kuliner Tasikmalaya</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body { font-family: sans-serif; }
+    </style>
+</head>
+<body class="bg-gray-800">
+
+    <div class="max-w-[1400px] mx-auto bg-white shadow-2xl my-8 min-h-screen flex flex-col relative">
+
+        <header class="bg-white border-b-4 border-teal-700 px-8 py-6 relative z-50">
+            <nav class="flex items-center justify-between">
+                <div class="w-10 h-10 bg-gray-800 flex items-center justify-center text-white font-bold">TV</div>
+                
+                <div class="text-xs font-bold tracking-widest uppercase flex gap-8 items-center relative">
+                    
+                    <div class="relative group">
+                        <button onclick="toggleDropdown()" class="hover:text-teal-700 focus:outline-none flex items-center gap-1 cursor-pointer">
+                            DAFTAR EUSI
+                            <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </button>
+
+                        <div id="dropdownMenu" class="hidden absolute top-full right-0 mt-4 w-64 bg-[#1a1a1a] text-white text-xs shadow-xl p-6 z-50 text-left normal-case">
+                            <ul class="space-y-3">
+                                <li><a href="#" class="hover:text-teal-400 block uppercase tracking-wide">NGEUNAAN KURING</a></li>
+                                <li>
+                                    <span class="block text-gray-300 uppercase tracking-wide mb-1">MESER TIKET</span>
+                                    <ul class="pl-4 space-y-2 text-gray-400 border-l border-gray-600 ml-1">
+                                        <li><a href="#" class="hover:text-white block">• SITU GEDE</a></li>
+                                        <li><a href="#" class="hover:text-white block">• GUNUNG GALUNGGUNG</a></li>
+                                        <li><a href="#" class="hover:text-white block">• CURUG PANETEAN</a></li>
+                                        <li><a href="#" class="hover:text-white block">• ARGA HOT SPRING</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="/wisata.html" class="hover:text-teal-400 block uppercase tracking-wide">WISATA</a></li>
+                                <li><a href="/panginepan-tasikmalaya.html" class="hover:text-teal-400 block uppercase tracking-wide">PANGINEPAN TASIKMALAYA</a></li>
+                                <li><a href="/" class="hover:text-teal-400 block uppercase tracking-wide">HUBUNGI KURING</a></li>
+
+                            </ul>
+                        </div>
+                    </div>
+
+                    <a href="/index.html" class="hover:text-teal-700">Kembali Ke Awal</a>
+                </div>
+            </nav>
+        </header>
+
+        <main class="bg-[#2f3e3b] px-4 md:px-12 py-16 flex-grow">
+            
+            <div class="text-center mb-16">
+                <h1 class="text-3xl text-white font-serif tracking-widest uppercase leading-snug">
+                    KULINER<br>TASIKMALAYA
+                </h1>
+            </div>
+
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-y-12 gap-x-4 justify-items-center">
+
+                <div class="flex flex-col items-center group">
+                    <a href="https://maps.app.goo.gl/h5axx9FTpF25M1FU8" class="block relative transform group-hover:scale-105 transition duration-300" target="_blank">
+                        <div class="w-32 h-32 rounded-full border-[3px] border-white bg-gray-400 overflow-hidden flex items-center justify-center">
+                            <img src="/img/kuliner/otherside.jpeg" alt="otherside" class="w-full h-full object-cover">
+                        </div>
+                    </a>
+                    <span class="text-white text-[10px] font-bold uppercase mt-4 tracking-wider text-center">THE OTHERSIDE</span>
+                </div>
+
+                <div class="flex flex-col items-center group">
+                    <a href="https://maps.app.goo.gl/WXa293sgV67Gq4s86" class="block relative transform group-hover:scale-105 transition duration-300" target="_blank">
+                        <div class="w-32 h-32 rounded-full border-[3px] border-white bg-gray-400 overflow-hidden flex items-center justify-center">
+                            <img src="/img/kuliner/notre.jpeg" alt="otherside" class="w-full h-full object-cover">
+                        </div>
+                    </a>
+                    <span class="text-white text-[10px] font-bold uppercase mt-4 tracking-wider text-center">NOTRE</span>
+                </div>
+
+                <div class="flex flex-col items-center group">
+                    <a href="https://maps.app.goo.gl/2JWwSeEqehBFZpfv7" class="block relative transform group-hover:scale-105 transition duration-300" target="_blank">
+                        <div class="w-32 h-32 rounded-full border-[3px] border-white bg-gray-400 overflow-hidden flex items-center justify-center">
+                             <img src="/img/kuliner/48street.jpeg" alt="otherside" class="w-full h-full object-cover">
+                        </div>
+                    </a>
+                    <span class="text-white text-[10px] font-bold uppercase mt-4 tracking-wider text-center">48 STREET</span>
+                </div>
+
+                <div class="flex flex-col items-center group">
+                    <a href="https://maps.app.goo.gl/jg2VXqtmVoN3CUgp9" class="block relative transform group-hover:scale-105 transition duration-300" target="_blank">
+                        <div class="w-32 h-32 rounded-full border-[3px] border-white bg-gray-400 overflow-hidden flex items-center justify-center">
+                             <img src="/img/kuliner/umino.jpeg" alt="otherside" class="w-full h-full object-cover">
+                        </div>
+                    </a>
+                    <span class="text-white text-[10px] font-bold uppercase mt-4 tracking-wider text-center">UMINO</span>
+                </div>
+
+                <div class="flex flex-col items-center group">
+                    <a href="https://maps.app.goo.gl/MCppWahCjn3dJCkGA" class="block relative transform group-hover:scale-105 transition duration-300" target="_blank">
+                        <div class="w-32 h-32 rounded-full border-[3px] border-white bg-gray-400 overflow-hidden flex items-center justify-center">
+                             <img src="/img/kuliner/laksana.jpeg" alt="otherside" class="w-full h-full object-cover">
+                        </div>
+                    </a>
+                    <span class="text-white text-[10px] font-bold uppercase mt-4 tracking-wider text-center">BAKSO LAKSANA</span>
+                </div>
+
+                <div class="flex flex-col items-center group">
+                    <a href="https://maps.app.goo.gl/Gzm73z5G3dSteVXF7" class="block relative transform group-hover:scale-105 transition duration-300" target="_blank">
+                        <div class="w-32 h-32 rounded-full border-[3px] border-white bg-gray-400 overflow-hidden flex items-center justify-center">
+                             <img src="/img/kuliner/soto ayam.jpeg" alt="otherside" class="w-full h-full object-cover">
+                        </div>
+                    </a>
+                    <span class="text-white text-[10px] font-bold uppercase mt-4 tracking-wider text-center">SOTO AYAM<br>PATARUMAN</span>
+                </div>
+
+                <div class="flex flex-col items-center group">
+                    <a href="https://maps.app.goo.gl/i2kTFeTHMqaeNf5x6" class="block relative transform group-hover:scale-105 transition duration-300" target="_blank">
+                        <div class="w-32 h-32 rounded-full border-[3px] border-white bg-gray-400 overflow-hidden flex items-center justify-center">
+                             <img src="/img/kuliner/ayam goreng mambo.jpeg" alt="otherside" class="w-full h-full object-cover">
+                        </div>
+                    </a>
+                    <span class="text-white text-[10px] font-bold uppercase mt-4 tracking-wider text-center">AYAM GORENG<br>MAMBO</span>
+                </div>
+
+                <div class="flex flex-col items-center group">
+                    <a href="https://maps.app.goo.gl/fenXEYSYSkSrLUsdA" class="block relative transform group-hover:scale-105 transition duration-300" target="_blank">
+                        <div class="w-32 h-32 rounded-full border-[3px] border-white bg-gray-400 overflow-hidden flex items-center justify-center">
+                             <img src="/img/kuliner/ramayana.jpeg" alt="otherside" class="w-full h-full object-cover">
+                        </div>
+                    </a>
+                    <span class="text-white text-[10px] font-bold uppercase mt-4 tracking-wider text-center">MARTABAK<br>RAMAYANA</span>
+                </div>
+
+                <div class="flex flex-col items-center group">
+                    <a href="https://maps.app.goo.gl/Z5kKTumT4z48SKMW8" class="block relative transform group-hover:scale-105 transition duration-300" target="_blank">
+                        <div class="w-32 h-32 rounded-full border-[3px] border-white bg-gray-400 overflow-hidden flex items-center justify-center">
+                             <img src="/img/kuliner/rango.jpeg" alt="otherside" class="w-full h-full object-cover">
+                        </div>
+                    </a>
+                    <span class="text-white text-[10px] font-bold uppercase mt-4 tracking-wider text-center">SAUNG RANGGON</span>
+                </div>
+
+                <div class="flex flex-col items-center group">
+                    <a href="https://maps.app.goo.gl/k4jU6uTUwVdX4tf77" class="block relative transform group-hover:scale-105 transition duration-300" target="_blank">
+                        <div class="w-32 h-32 rounded-full border-[3px] border-white bg-gray-400 overflow-hidden flex items-center justify-center">
+                             <img src="/img/kuliner/antrek.jpeg" alt="otherside" class="w-full h-full object-cover">
+                        </div>
+                    </a>
+                    <span class="text-white text-[10px] font-bold uppercase mt-4 tracking-wider text-center">NINI ANTEH</span>
+                </div>
+
+                <div class="flex flex-col items-center group">
+                    <a href="https://maps.app.goo.gl/d9ncsaZbebGm21Mz6" class="block relative transform group-hover:scale-105 transition duration-300" target="_blank">
+                        <div class="w-32 h-32 rounded-full border-[3px] border-white bg-gray-400 overflow-hidden flex items-center justify-center">
+                             <img src="/img/kuliner/gunung jati.jpeg" alt="otherside" class="w-full h-full object-cover">
+                        </div>
+                    </a>
+                    <span class="text-white text-[10px] font-bold uppercase mt-4 tracking-wider text-center">SAUNG GUNUNG<br>JATI</span>
+                </div>
+
+                <div class="flex flex-col items-center group">
+                    <a href="https://maps.app.goo.gl/APW5DZevxcUtSpQF7" class="block relative transform group-hover:scale-105 transition duration-300" target="_blank">
+                        <div class="w-32 h-32 rounded-full border-[3px] border-white bg-gray-400 overflow-hidden flex items-center justify-center">
+                             <img src="/img/kuliner/unnamed.webp" alt="otherside" class="w-full h-full object-cover">
+                        </div>
+                    </a>
+                    <span class="text-white text-[10px] font-bold uppercase mt-4 tracking-wider text-center">LEUIT MAEJA</span>
+                </div>
+
+            </div>
+        </main>
+
+        <footer class="bg-white py-8 border-t border-gray-200">
+            <div class="flex justify-center space-x-8 text-gray-800">
+                <a href="https://www.facebook.com/share/14PWxPvPYDF/"  class="hover:text-teal-700" target="_blank">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                </a>
+                <a href="https://www.instagram.com/_starzboy/" class="hover:text-teal-700" target="_blank">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                </a>
+            </div>
+        </footer>
+
+    </div>
+
+    <script>
+        function toggleDropdown() {
+            var dropdown = document.getElementById('dropdownMenu');
+            dropdown.classList.toggle('hidden');
+        }
+
+        window.onclick = function(event) {
+            if (!event.target.closest('button') && !event.target.closest('#dropdownMenu')) {
+                document.getElementById('dropdownMenu').classList.add('hidden');
+            }
+        }
+    </script>
+</body>
+</html>
